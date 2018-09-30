@@ -2,12 +2,12 @@
 
 
 [[projects]]
-  digest = "1:b16fbfbcc20645cb419f78325bb2e85ec729b338e996a228124d68931a6f2a37"
+  digest = "1:9f3b30d9f8e0d7040f729b82dcbc8f0dead820a133b3147ce355fc451f32d761"
   name = "github.com/BurntSushi/toml"
   packages = ["."]
   pruneopts = "UT"
-  revision = "b26d9c308763d68093482582cea63d69be07a0f0"
-  version = "v0.3.0"
+  revision = "3012a1dbe2e4bd1391d42b32f0577cb7bbc7f005"
+  version = "v0.3.1"
 
 [[projects]]
   branch = "master"
@@ -26,16 +26,31 @@
   packages = ["."]
   pruneopts = "UT"
   revision = "ccb8e960c48f04d6935e72476ae4a51028f9e22f"
-  source = "https://github.com/asaskevich/govalidator.git"
   version = "v9"
 
 [[projects]]
-  digest = "1:a2c1d0e43bd3baaa071d1b9ed72c27d78169b2b269f71c105ac4ba34b1be4a39"
+  digest = "1:fed1f537c2f1269fe475a8556c393fe466641682d73ef8fd0491cd3aa1e47bad"
+  name = "github.com/certifi/gocertifi"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "deb3ae2ef2610fde3330947281941c562861188b"
+  version = "2018.01.18"
+
+[[projects]]
+  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
   pruneopts = "UT"
-  revision = "346938d642f2ec3594ed81d874461961cd0faa76"
-  version = "v1.1.0"
+  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+  version = "v1.1.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:64ef2c2f0f508690f06c1b009e1e3103441ce60c2db0323ff94d8d1c560ec10b"
+  name = "github.com/getsentry/raven-go"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "084a9de9eb0361fbd5ded14b55c84e5493a5d7f6"
 
 [[projects]]
   digest = "1:aacef5f5e45685f2aeda5534d0a750dee6859de7e9088cdd06192787bb01ae6d"
@@ -46,15 +61,15 @@
   version = "v1.0.1"
 
 [[projects]]
-  branch = "master"
-  digest = "1:37ce7d7d80531b227023331002c0d42b4b4b291a96798c82a049d03a54ba79e4"
+  digest = "1:8ef506fc2bb9ced9b151dafa592d4046063d744c646c1bbe801982ce87e4bc24"
   name = "github.com/lib/pq"
   packages = [
     ".",
     "oid",
   ]
   pruneopts = "UT"
-  revision = "90697d60dd844d5ef6ff15135d0203f65d2f53b8"
+  revision = "4ded0e9383f75c197b3a2aaa6d590ac52df6fd79"
+  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -107,8 +122,8 @@
   revision = "68cec9f21fbf3ea8d8f98c044bc6ce05f17b267a"
 
 [[projects]]
-  branch = "master"
-  digest = "1:1281c9ced13db776e3e40c8bcf5d34d462be8a4c0aebc7acfd59184b8a7f4476"
+  branch = "quanta"
+  digest = "1:0c2e705dea1dbb2073e065000a0485330335217a31c1b76c705281c131d1bb80"
   name = "github.com/stellar/go"
   packages = [
     "address",
@@ -123,19 +138,16 @@
     "network",
     "price",
     "protocols/federation",
-    "protocols/horizon",
-    "protocols/horizon/base",
     "strkey",
     "support/errors",
     "support/http/mutil",
     "support/log",
-    "support/render/hal",
     "support/render/problem",
-    "support/url",
     "xdr",
   ]
   pruneopts = "UT"
-  revision = "8cb6fe59b4b97fdf89644d1c38e5b9287f6df5aa"
+  revision = "09a564ff341d18125d7c401af166ff62770e7aff"
+  source = "https://github.com/quantadex/stellar_go.git"
 
 [[projects]]
   digest = "1:ac83cf90d08b63ad5f7e020ef480d319ae890c208f8524622a2f3136e2686b02"
@@ -158,11 +170,19 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:05662433b3a13c921587a6e622b5722072edff83211efd1cd79eeaeedfd83f07"
+  digest = "1:76ee51c3f468493aff39dbacc401e8831fbb765104cbf613b89bef01cf4bad70"
+  name = "golang.org/x/net"
+  packages = ["context"]
+  pruneopts = "UT"
+  revision = "4dfa2610cdf3b287375bbba5b8f2a14d3b01d8de"
+
+[[projects]]
+  branch = "master"
+  digest = "1:e2ced6fdf654069e8713c96012275fbd245381673d53e8c8ace640b28441a28b"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "1c9583448a9c3aa0f9a6a5241bf73c0bd8aafded"
+  revision = "e4b3c5e9061176387e7cea65e4dc5853801f3fb7"
 
 [solve-meta]
   analyzer-name = "dep"

@@ -9,8 +9,8 @@ import (
 )
 
 // NewLogglyHook creates a new hook
-func NewLogglyHook(token, tag string) *LogglyHook {
-	client := loggly.New(token, tag)
+func NewLogglyHook(token string) *LogglyHook {
+	client := loggly.New(token, "horizon")
 	host, err := os.Hostname()
 
 	if err != nil {

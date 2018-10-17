@@ -17,6 +17,9 @@ const Credit4Type AssetType = "credit_alphanum4"
 // Credit12Type represents credit assets with 12-digit codes.
 const Credit12Type AssetType = "credit_alphanum12"
 
+// Credit64Type represents credit assets with 64-digit codes.
+const Credit64Type AssetType = "credit_alphanum64"
+
 // Asset represents a specific asset class on the stellar network. For native
 // assets "Code" and "Issuer" are ignored.
 type Asset struct {
@@ -60,6 +63,8 @@ func (asset Asset) Validate() error {
 		return errors.Errorf("invalid: Credit4Type assets must not have more than 4 characters")
 	} else if asset.Type == Credit12Type && len(asset.Code) > 12 {
 		return errors.Errorf("invalid: Credit12Type assets must not have more than 12 characters")
+	} else if asset.Type == Credit64Type && len(asset.Code) > 64 {
+		return errors.Errorf("invalid: Credit64Type assets must not have more than 64 characters")
 	}
 
 	if !asset.IsNative() && !ValidAddressOrSeed(asset.Issuer) {

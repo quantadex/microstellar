@@ -59,8 +59,11 @@ func NewTx(networkName string, params ...Params) *Tx {
 		network = build.PublicNetwork
 		client = horizon.DefaultPublicNetClient
 	case "test":
-		network = build.TestNetwork
-		client = horizon.DefaultTestNetClient
+		network = build.Network{"QUANTA Test Network ; September 2018"}
+		client = &horizon.Client{
+			URL: "http://testnet-02.quantachain.io:8000",
+			HTTP: http.DefaultClient,
+		}
 	case "fake":
 		network = build.TestNetwork
 		client = horizon.DefaultTestNetClient
